@@ -1,18 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 import './SearchBar.css';
 
-const sortByOptions = {
-    'Best Match': 'best_match',
-    'Highest Rated': 'rating',
-    'Most Reviewed': 'review_count'
-}
-
-
 export default function SearchBar() {
+    const [search, setSearch] = useState({
+        term: '',
+        location: '',
+        sortBy: 'best_match'
+    });
+
+    const sortByOptions = {
+        'Best Match': 'best_match',
+        'Highest Rated': 'rating',
+        'Most Reviewed': 'review_count'
+    }
+
+    const getSortByClass = (sortByOption) => {
+        if(search.sortBy === sortByOption) {
+            return 'active';
+        }else {
+            return ' ';
+        }
+    }
+
+    const handleSortByChange = (sortByOption) => {
+        setSearch({  sortBy: sortByOption})
+    }
+
+
     const renderSortByOptions = () => {
         return Object.keys(sortByOptions).map(sortByOption => {
             let sortByOptionValue = sortByOptions[sortByOption];
-            return <li key={sortByOptionValue}>{sortByOption}</li>
+            return <li key={sortByOptionValue} className={getSortByClass(sortByOptionValue)} onClick={()=> handleSortByChange(sortByOptionValue)}>{sortByOption}</li>
         });
     }
     return(
