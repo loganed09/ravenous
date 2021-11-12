@@ -2,6 +2,7 @@
   "name": "ravenous",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://loganed09.github.io/ravenous/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,7 +19,7 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "ghdeploy": "gh-pages -d build",
-    "deploy": "aws s3 sync build/ s3://ravenous--acl public-read",
+    "deploy": "aws s3 sync build/ s3://ravenous-project --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
