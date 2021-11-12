@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './SearchBar.css';
 
-export default function SearchBar() {
+export default function SearchBar(props) {
     const [search, setSearch] = useState({
         term: '',
         location: '',
@@ -23,7 +23,26 @@ export default function SearchBar() {
     }
 
     const handleSortByChange = (sortByOption) => {
-        setSearch({  sortBy: sortByOption})
+        setSearch({ sortBy: sortByOption})
+    }
+
+    const handleTermChange = e => {
+        setSearch(prev => ({
+            ...prev,
+            term: e.target.value
+        }))
+    }
+
+    const handleLocationChange = e => {
+        setSearch(prev => ({
+            ...prev,
+            location: e.target.value
+        }))
+    }
+
+    const handleSearch = e => {
+        props.searchYelp(search.term, search.location, search.sortBy);
+        e.preventDefault();
     }
 
 
@@ -41,11 +60,11 @@ export default function SearchBar() {
         </ul>
         </div>
         <div className="SearchBar-fields">
-            <input placeholder="Search Businesses" />
-            <input placeholder="Where?" />
+            <input onChange={handleTermChange} placeholder="Search Businesses" />
+            <input onChange={handleLocationChange} placeholder="Where?" />
         </div>
         <div className="SearchBar-submit">
-            <a>Let's Go</a>
+            <a onClick={handleSearch}>Let's Go</a>
         </div>
     </div>
     )
