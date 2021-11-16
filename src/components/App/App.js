@@ -20,7 +20,10 @@ function App() {
 
   return (
     <div class="App">
-      <h1>ravenous</h1>
+      <div className="header">
+        <h1>ravenous</h1>
+        <h6>Please visit <a href="https://cors-anywhere.herokuapp.com/corsdemo">this</a> and request temporary access for this demo to work properly.</h6>
+      </div>
       <SearchBar searchYelp={searchYelp} />
       <BusinessList businesses={business.businesses}/>
     </div>

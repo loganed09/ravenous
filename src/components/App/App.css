@@ -8,6 +8,16 @@ html {
   html {
     font-size: 15px;
   }
+
+  .header h1 {
+    grid-column: 1;
+    padding-left: .5rem;
+  }
+
+  .header h6 {
+    grid-column: 3 / span 3;
+    padding-right: .5rem;
+  }
 }
 
 input:focus {
@@ -34,11 +44,30 @@ input:focus {
   font-family: 'Work Sans', sans-serif;
 }
 
-h1 {
-  padding: .66rem 0;
+/* h1 {
+  padding: .6rem 0;
   text-align: center;
   background-color: #cca353;
   font-family: Poppins, sans-serif;
   font-size: 1.8rem;
   color: #fff;
+  margin: 0;
+} */
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #cca353;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  grid-column: 3;
+  color: white;
+  padding: 0;
+}
+
+h6 {
+  grid-column: 4 / 6;
 }
