@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ravenous/static/css/main.ad5dc45a.chunk.css",
-    "main.js": "/ravenous/static/js/main.8b4b0358.chunk.js",
-    "main.js.map": "/ravenous/static/js/main.8b4b0358.chunk.js.map",
+    "main.css": "/ravenous/static/css/main.43e598e9.chunk.css",
+    "main.js": "/ravenous/static/js/main.33fc25a1.chunk.js",
+    "main.js.map": "/ravenous/static/js/main.33fc25a1.chunk.js.map",
     "runtime-main.js": "/ravenous/static/js/runtime-main.2fd0ba72.js",
     "runtime-main.js.map": "/ravenous/static/js/runtime-main.2fd0ba72.js.map",
     "static/js/2.632d2883.chunk.js": "/ravenous/static/js/2.632d2883.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7a9a675b.chunk.js": "/ravenous/static/js/3.7a9a675b.chunk.js",
     "static/js/3.7a9a675b.chunk.js.map": "/ravenous/static/js/3.7a9a675b.chunk.js.map",
     "index.html": "/ravenous/index.html",
-    "static/css/main.ad5dc45a.chunk.css.map": "/ravenous/static/css/main.ad5dc45a.chunk.css.map",
+    "static/css/main.43e598e9.chunk.css.map": "/ravenous/static/css/main.43e598e9.chunk.css.map",
     "static/js/2.632d2883.chunk.js.LICENSE.txt": "/ravenous/static/js/2.632d2883.chunk.js.LICENSE.txt",
     "static/media/SearchBar.css": "/ravenous/static/media/background_search_mobile.a6f8ee50.jpg",
     "static/media/logo.6ce24c58.svg": "/ravenous/static/media/logo.6ce24c58.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.2fd0ba72.js",
     "static/js/2.632d2883.chunk.js",
-    "static/css/main.ad5dc45a.chunk.css",
-    "static/js/main.8b4b0358.chunk.js"
+    "static/css/main.43e598e9.chunk.css",
+    "static/js/main.33fc25a1.chunk.js"
   ]
 }
